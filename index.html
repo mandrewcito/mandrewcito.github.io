@@ -3,249 +3,199 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Andrés Baamonde Lozano personal site">
-    <meta name="keywords" content="personal,site,Andrés,Baamonde,Lozano,mandrewcito,PWS">
-    <meta name="author" content="Andrés Baamonde Lozano">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>mandrewcito</title>
-    <link rel="icon" href="static/img/favicon.ico" type="image/x-icon" />
-    <!-- Bootstrap Core CSS -->
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+  <title> Mandrewcito :: Landing page</title>
 
-    <!-- Custom CSS -->
-    <link href="static/css/landing-page.css" rel="stylesheet">
+  <!-- Custom fonts for this theme -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- Custom Fonts -->
-    <link href="static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- Theme CSS -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body id="page-top">
+  <!-- Masthead -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+      <!-- Masthead Avatar Image -->
+      <img class="masthead-avatar mb-5 rounded-circle" src="img/timon.jpg" alt="">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!--<a class="navbar-brand topnav" href="#">Start Bootstrap</a> -->
+      <!-- Masthead Heading -->
+      <h1 class="masthead-heading text-uppercase mb-0">mandrewcito</h1>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Masthead Subheading -->
+      <div class="row">
+        <a class="btn btn-lg btn-so"
+        href="https://es.linkedin.com/in/anbaalo">
+          <i class="fab fa-linkedin-in pr-1"></i>
+          <span>Linkedin</span>
+        </a>
+        <a class="btn btn-lg btn-so"
+        href="https://github.com/mandrewcito">
+          <i class="fab fa-github pr-1"></i>
+          <span>Github</span>
+        </a>
+        <a class="btn btn-lg btn-so"
+        href="https://dev.to/mandrewcito/">
+          <i class="fab fa-dev pr-1"></i>
+          <span>dev.to</span>
+        </a>
+        <a class="btn btn-lg btn-so" href="https://es.stackoverflow.com/users/29448/mandrewcito">
+          <i class="fab fa-stack-overflow pr-1"></i>
+          <span>Stack Overflow</span>
+        </a>
+        <a  class="btn btn-lg btn-so" href="https://twitter.com/Mandrewcito">
+          <i class="fab fa-twitter pr-1"></i>
+          <span>Twitter</span>
+        </a>
+        <a class="btn btn-lg btn-so" href="https://www.instagram.com/mandrewcito/">
+          <i class="fab fa-instagram pr-1"></i>
+          <span>Instagram</span>
+        </a>
+      </div>
+      </div>
+ 
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="page-section portfolio" id="portfolio">
+    <div id="app">
+
+
+    <div class="row filter md-form ">
+      <div class="col-lg-2 col-md-2"> </div>
+      <div class="col-lg-6 col-md-6">
+          <div class="mt-0">
+              <input v-model="query" class="form-control" type="text" placeholder="Search" aria-label="Search">
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="static/AndresBaamondeLozanoCV.pdf">CV</a>
-                    </li>
-                    <li>
-                        <a href="mailto:anbaalo@gmail.com?Subject=Hello" target="_top">Contact</a>
-                    </li>
-                </ul>
+      </div>
+      <div class="col-lg-2 col-md-2  md-form ">
+          <div class="custom-switch">
+              <input  v-model="ownProjects" type="checkbox" class="custom-control-input" id="customSwitches">
+              <label class="custom-control-label" for="customSwitches">Only mandrewcito's projects</label>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+      </div>
+      <div class="col-lg-2 col-md-2"> </div>
+    </div>
+    <div class="row results">
+        <div class="col-lg-2 col-md-2"> </div>
+      <div class="col-lg-8 col-md-8">
+          <ul class="list-group">
+              <li
+              class="media list-group-item my-4"
+              v-for="(item, index) in linksFiltered">
+              <a v-bind:href="item.url">
+              <div class="row">
+                  <div class="col-lg-2 col-md-2">
+                      <img class="mr-3" width="20" height="20" v-bind:src="item.favicon" alt="favicon" />
+                  </div>
+                  <div class="col-lg-4 col-md-4">
+                    <span>{{item.name}}</span>
+                  </div>
+                  <div class="col-lg-3 col-md-3">
+                    <span v-for="(tag,idx) in item.tags" class="m-1 badge badge-secondary">
+                      {{tag}}
+                    </span>
+                  </div>
+                  <div class="col-lg-1 col-md-1">
+                    <span>{{item.owner}}</span>
+                  </div>
+              </div>
 
+            </a>
+              </li>
+              <li class="media list-group-item my-4" v-if="linksFiltered.length == 0">
+                <div class="row">
+                  <div class="col-lg-4">
 
-    <!-- Header -->
-    <a name="about"></a>
-    <div class="intro-header">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>mandrewcito</h1>
-                        <h3>Free as in freedom</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://twitter.com/mandrewcito" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/mandrewcito" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/anbaalo" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                            </li>
-                            <li>
-                                <a href="http://mandrewcito.wordpress.com/" class="btn btn-default btn-lg"><i class="fa fa-wordpress fa-fw"></i> <span class="network-name">Wordpress</span></a>
-                            </li>
-                        </ul>
+                  </div>
+                  <div class="col-lg-8">
+                      <span>Could not get any result</span>
                     </div>
                 </div>
-            </div>
 
-        </div>
-        <!-- /.container -->
-
+              </li>
+            </ul>
+      </div>
     </div>
-    <!-- /.intro-header -->
+  </div>
+  </section>
 
-    <!-- Page Content -->
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
 
-	<a  href="./igewrapper.html" name="services"></a>
+        <!-- Footer Location -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p class="lead mb-0">A Coruña</p>
+        </div>
 
-  <div class="content-section-a">
+        <!-- Footer Social Icons -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Contact</h4>
+          anbaalo at gmail
+        </div>
 
-      <div class="container">
-
-          <div class="row">
-              <div class="col-lg-5 col-sm-6">
-                  <hr class="section-heading-spacer">
-                  <div class="clearfix"></div>
-                  <h2 class="section-heading">Paper Matters</h2>
-                  <p class="lead">hype machine</p>
-              </div>
-              <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                  <img class="img-responsive" src="static/img/plane.png" alt="">
-              </div>
-          </div>
+        <!-- Footer About Text -->
+        <div class="col-lg-4">
+          <h4 class="text-uppercase mb-4">About</h4>
+          <p class="lead mb-0">Tiny bootstrap template with a list filter in vuejs :)
+            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+            <a href="https://vuejs.org/v2/guide/">Start Vue</a>.</p>
+        </div>
 
       </div>
-</div>
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Flask mini app </h2>
-                    <p class="lead">Mini aplicación de Flask restful en la que intentaré tener un pequeño ejemplo de cada cosa <a href="https://github.com/mandrewcito/flask-example-app">GitHub</a></p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="static/img/flask.png" alt="flask icon">
-                </div>
-            </div>
-
-        </div>
-</div>
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Modelos de regresión aplicados a la evaluación de la película lagrimal</h2>
-                    <p class="lead">Su objetivo principal es desarrollar una metodología que permita la definición de una escala continua de patrones interferenciales para el análisis y la evaluación de imágenes de película lagrimal utilizando modelos de regresión..[Privado por el momento] <a href="#">GitHub</a></p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="static/img/eye.png" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-    <!-- /.content-section-a -->
-</div>
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">A Coruña Open Data Services</h2>
-                    <p class="lead">Intento de hacer más real lo de una A Coruña 'conectada'. No subiendo excel o cvs, sino exponiendo una serie
-                                    de servicios web para consumir por otras aplicaciones.</p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="static/img/bar.png" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
     </div>
-    <!-- /.content-section-b -->
-</div>
-    <div class="content-section-a">
+  </footer>
 
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">PWS</h2>
-                    <p class="lead">Idea nacida de un hacklab del <a href="http://www.gpul.org/">Gpul</a>. Huerto monitorizado y configurable con sistema de alertas y actuadores.<a target="_blank" href="https://github.com/OpenComunCas/PWS">GitHub</a>.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="static/img/farm.png" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
+  <!-- Copyright Section -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Mandrewcito 2019</small>
     </div>
-    <!-- /.content-section-a -->
-</div>
-	<a  name="contact"></a>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="static/AndresBaamondeLozanoCV.pdf">CV</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="./igewrapper.html">Services</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
-                </div>
-        </div>
-    </footer>
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
 
-    <!-- jQuery -->
-    <script src="static/js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="static/js/bootstrap.min.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  ga('create', 'UA-85688197-1', 'auto');
-  ga('send', 'pageview');
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-</script>
+  <script type="text/javascript" src="vendor/vue/vue.min.js"></script>
+  <script type="text/javascript" src="vendor/axios/axios.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+  <script type="text/javascript" src="js/appvue.js"></script>
 </body>
 
 </html>

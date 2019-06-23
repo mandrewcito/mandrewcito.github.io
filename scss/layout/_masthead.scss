@@ -1,0 +1,30 @@
+.masthead {
+  padding-top: 50px;
+  padding-bottom: 3rem;
+  background-image: url("img/Lean-UX-Agile-UX.003.png") !important;
+  .masthead-heading {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+  }
+  .masthead-subheading {
+    font-size: 1.25rem;
+  }
+  .masthead-avatar {
+    width: 15rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .masthead {
+    padding-top: 50px;
+    padding-bottom: 3rem;
+    .masthead-heading {
+      font-size: 4rem;
+      line-height: 3.5rem;
+    }
+    .masthead-subheading {
+      font-size: 1.5rem;
+    }
+
+  }
+}

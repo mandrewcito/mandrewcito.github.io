@@ -48,6 +48,13 @@
             "url": "https://pgicons.abiro.com/",
             "owner": null,
             "tags": ["generator", "cordova", "splashscreen"]
+        },
+        {
+            "favicon":"https://www.dr-lex.be/favicon.ico",
+            "name": "Bitrate calculator",
+            "url": "https://www.dr-lex.be/info-stuff/videocalc.html",
+            "owner": null,
+            "tags":["bitrate", "calculator", "video"]
         }
     ]
 }

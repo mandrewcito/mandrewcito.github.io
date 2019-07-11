@@ -10727,16 +10727,23 @@ a.text-dark:hover, a.text-dark:focus {
 .masthead {
   padding-top: 50px;
   padding-bottom: 3rem;
-  background-image: url("img/Lean-UX-Agile-UX.003.png") !important;
+  background-image: url("../img/nes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .masthead .masthead-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
+  text-shadow: -0.5px 0 grey, 0 0.5px grey, 0.5px 0 grey, 0 -0.5px grey;
 }
 
 .masthead .masthead-subheading {
   font-size: 1.25rem;
+}
+
+.masthead .masthead-subheading .bordegris {
+  text-shadow: -0.5px 0 grey, 0 0.5px grey, 0.5px 0 grey, 0 -0.5px grey;
 }
 
 .masthead .masthead-avatar {

@@ -1,0 +1,60 @@
+{
+    "links": [
+        {
+            "favicon":"https://dotnet.microsoft.com/favicon.ico",
+            "name":"Signalrcore python client",
+            "url": "http://mandrewcito.github.io/signalrcore/",
+            "owner": "mandrewcito",
+            "tags": ["signalrcore", "python", "client"]
+        },
+        {
+            "favicon":"https://www.json.org/favicon.ico",
+            "name":"Json repository",
+            "url": "https://github.com/mandrewcito/json_repository/",
+            "owner": "mandrewcito",
+            "tags": ["json", "python", "repository"]
+        },
+        {
+            "favicon":"https://www.favicon.cc/favicon.ico",
+            "name":"Pub Sub python implementation",
+            "url": "https://github.com/mandrewcito/event_channel/",
+            "owner": "mandrewcito",
+            "tags": ["publisher", "subscriber", "python"]
+        },
+        {
+            "favicon":"https://jsonlint.com/favicon.ico",
+            "name":"Json lint validator",
+            "url": "https://jsonlint.com/",
+            "owner": null,
+            "tags": ["json", "lint", "validator"]
+        },
+        {
+            "favicon":"https://dotnet.microsoft.com/favicon.ico",
+            "name":"Aspnet handling legacy urls",
+            "url": "https://www.mikesdotnetting.com/article/108/handling-legacy-urls-with-asp-net-mvc",
+            "owner": null,
+            "tags": ["handle", "urls", "aspnet","legacy"]
+        },
+        {
+            "favicon":"https://dotnet.microsoft.com/favicon.ico",
+            "name":"Aspnet HTTP module and handler interceptor",
+            "url": "https://www.codeproject.com/Articles/30907/The-Two-Interceptors-HttpModule-and-HttpHandlers",
+            "owner": null,
+            "tags": ["http", "interceptor", "aspnet"]
+        },
+        {
+            "favicon":"https://pgicons.abiro.com/favicon.ico",
+            "name":"Phonegap image generator",
+            "url": "https://pgicons.abiro.com/",
+            "owner": null,
+            "tags": ["generator", "cordova", "splashscreen"]
+        },
+        {
+            "favicon":"https://www.dr-lex.be/favicon.ico",
+            "name": "Bitrate calculator",
+            "url": "https://www.dr-lex.be/info-stuff/videocalc.html",
+            "owner": null,
+            "tags":["bitrate", "calculator", "video"]
+        }
+    ]
+}
